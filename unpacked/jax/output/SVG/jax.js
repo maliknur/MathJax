@@ -1052,7 +1052,7 @@
       if (cache) {
         def = {}; if (transform) {def.transform = transform}
         this.element = SVG.Element("use",def);
-        this.element.setAttributeNS(XLINKNS,"href","#"+id);
+        this.element.setAttributeNS(XLINKNS,"href", window.location.href.split("#")[0] +"#"+id);
       }
       this.h = (h+t) * scale; this.d = (d+t) * scale; this.w = (w+t/2) *scale;
       this.l = (l+t/2) * scale; this.r = (r+t/2) * scale;
